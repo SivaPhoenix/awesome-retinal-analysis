@@ -7,7 +7,7 @@ import mine as f
 import  CataractDetection as yeah
 
 
-__author__ = 'ibininja'
+__author__ = 'siva'
 
 app = Flask(__name__)
 app.config['UPLOAD_CONFIG'] = './experiments/VesselNet/test/test_images/uploaded'
