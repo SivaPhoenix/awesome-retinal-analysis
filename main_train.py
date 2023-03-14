@@ -14,11 +14,7 @@ import numpy as np
 
 
 def main_train():
-    """
-    训练模型
-
-    :return:
-    """
+    
     print('[INFO] Reading Configs...')
 
     config = None
@@ -28,7 +24,7 @@ def main_train():
     except Exception as e:
         print('[Exception] Config Error, %s' % e)
         exit(0)
-    # np.random.seed(47)  # 固定随机数
+    # np.random.seed(47) 
 
     print('[INFO] Preparing Data...')
     dataloader = DataLoader(config=config)
