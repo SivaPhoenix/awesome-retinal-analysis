@@ -11,10 +11,16 @@ Doctor can visible the segmented image in tested file
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies.
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Run the project
+
+In terminal 
+
+```bash
+cd awesome-retinal-analysis
+```
 
 ```python
 python backend.py
