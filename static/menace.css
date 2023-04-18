@@ -1,0 +1,32 @@
+.body{
+    background: #fff url(https://i.postimg.cc/mk1Ln8Q0/Minions.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 348px;
+    height: 553.7px;
+    margin-top: 90px;
+}
+.eyes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+}
+.eye{
+    width: 89.7px;
+    height: 78px;
+    border-radius: 50%;
+    float: left;
+    margin: 12px;
+
+}
+.ball{
+    background: url(https://i.postimg.cc/ZRRK8T0Y/minion-eye1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42.3px;
+    height: 42.3px;
+    border-radius: 50%;
+
+}
+
