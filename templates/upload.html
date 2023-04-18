@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    
+        <div class="first-wrap">
+            <div class="first-div">
+    
+                <div class="first-inner-div">
+                    <p>MERCURY PETELS</p>
+                    <a href="#anchor">
+                        <span class="glyphicon glyphicon-circle-arrow-down down-arrow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    <div class="second-wrap">
+        <div class="second-div" id="anchor">
+            <p class="body-text">
+                Rewizit
+                
+            </p>
+        </div>
+        <div class="third-div">
+            <div class="sad">
+            <p>
+                The eye is an incredibly important organ that allows us to see and interact with the world around us. Without the eye, we would be unable to appreciate the beauty of the natural world, read books, watch movies, or engage in countless other activities that rely on vision.
+                We provide a detailed analysis of the eye (retina and cataract) including segmentation and anotations and predictions.
+        </p>
+        </div>
+        
+        </div>
+    </div>
+
+  
+<section>
+    <div class="third-wrap">
+        <div class="fourth-div">
+            <p class="body-text">
+                <span class="line-separator"></span> diabetic retinopathy and Cataract
+                <span class="line-separator"></span>
+            </p>
+        </div>
+         <div class="fourdiv">
+            <!-- <div class="sad"> -->
+                <div class="centering">
+                
+    <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+        
+            
+           
+                
+                
+                <div class="circle-ripple"></div>
+
+                
+                <br>
+                
+            <input id="file-picker" type="file" value="drag" class="last" name="file" accept="image/*" multiple>
+        
+            
+            
+                <a href="gallery"> <button class="button cancel-btn" onclick="addAnimation()" value="Upload!" id="upload-button">View Results</button></a>
+            
+            </div>
+            
+        
+    </form>
+    
+</div>
+           
+<div class="centering">
+
+    
+
+    <form id="upload-form" action="{{ url_for('menacee') }}" method="POST" enctype="multipart/form-data">
+        
+            
+           
+                
+                
+        <div class="circle-ripple"></div>
+        
+        <!-- <br> -->
+    <input id="file-picker" type="file" value="drag" class="last" name="file" accept="image/*" multiple>
+
+    
+    
+        <a href="gallery"> <button class="button cancel-btn" onclick="addAnimation()" id="upload-button">View Results</button></a>
+    </div>
+    
+
+</form>
+    
+    
+        </p>
+        <div class="fourth-wrap">
+            <div class="fourth-div">
+                <p class="body-text">
+                    <span class="line-separator"></span> About 
+                    <span class="line-separator"></span>
+                </p>
+            </div>
+            <div class="fourdiv">
+                <div class="sad">
+                <p>
+                    We the students of SREC have implemented this using some basic knowledge on Retinal analysis and deep learning.
+                    This prediction does not replace the accurate devices to measure,instead takes different approach methods of image processing and predicts based on the image given.
+            </p>
+            
+            </div>
+        <div class="fifth-div">
+        </div>
+    </div>
+</section>
+    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    <script>
+        // $(function () {
+        //     $('a[href*=#]:not([href=#])').click(function () {
+        //         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        //             var target = $(this.hash);
+        //             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        //             if (target.length) {
+        //                 $('html,body').animate({
+        //                     scrollTop: target.offset().top
+        //                 }, 700);
+        //                 return false;
+        //             }
+        //         }
+        //     });
+        // });
+
+        // /*
+        //   Back to top scroll button. The following code is from
+        //   http://jsfiddle.net/gilbitron/Lt2wH/
+        // */
+        // if ($('#back-to-top').length) {
+        //     var scrollTrigger = 100, // px
+        //         backToTop = function () {
+        //             var scrollTop = $(window).scrollTop();
+        //             if (scrollTop > scrollTrigger) {
+        //                 $('#back-to-top').addClass('show');
+        //             } else {
+        //                 $('#back-to-top').removeClass('show');
+        //             }
+        //         };
+        //     backToTop();
+        //     $(window).on('scroll', function () {
+        //         backToTop();
+        //     });
+        //     $('#back-to-top').on('click', function (e) {
+        //         e.preventDefault();
+        //         $('html,body').animate({
+        //             scrollTop: 0
+        //         }, 700);
+        //     });
+        // }
+    </script>
+   
+</body>
+<script>
+    // document.querySelector('.main').style.display = 'none';
+    // document.getElementById('load').classList.add('loader');
+    // setTimeout(() => {
+    //     document.getElementById('load').classList.remove('loader');
+    //     document.querySelector('.main').style.display = 'block';
+
+    // }, 4000);
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(150);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#file-picker").change(function () {
+
+        var input = document.getElementById('file-picker');
+
+        for (var i = 0; i < input.files.length; i++) {
+            //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+
+            var ext = input.files[i].name.substring(input.files[i].name.lastIndexOf('.') + 1).toLowerCase()
+
+
+
+            if ((ext == 'jpg') || (ext == 'png') || (ext == 'tif')) {
+                $("#msg").text("Files are supported")
+                
+            }
+            else {
+                $("#msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value = "";
+            }
+
+            $("#msg").text({predict})
+
+        }
+
+    });
+
+// $(document).ready(function(){
+//     $(".submit").click(function(){
+//         $(this).addClass("active");
+
+//         setTimeout(function()
+//         {
+//             $(".submit").addClass("success");
+//         },3700);
+//         setTimeout(function(){
+//             $(".submit").removeClass("active");
+//             $(".button").removeClass("success");
+//         },5000);
+//     });
+// });
+
+</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+			integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			$(document).ready(function () {
+				screenCheck();
+
+				$('.scroll-control .one').click(function () {
+					$.scrollify.move('#s-one');
+				});
+				$('.scroll-control .two').click(function () {
+					$.scrollify.move('#s-two');
+				});
+				$('.scroll-control .three').click(function () {
+					$.scrollify.move('#s-three');
+				});
+			});
+
+			$(window).on('resize', function () {
+				screenCheck();
+			});
+
+			function applyScroll() {
+				$.scrollify({
+					section: '.scroll',
+					sectionName: 'section-name',
+					//standardScrollElements: 'section',
+					easing: 'easeOutExpo',
+					scrollSpeed: 1100,
+					offset: 0,
+					scrollbars: true,
+					setHeights: true,
+					overflowScroll: true,
+					updateHash: false,
+					touchScroll: true,
+				});
+			}
+
+			function screenCheck() {
+				var deviceAgent = navigator.userAgent.toLowerCase();
+				var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+				if (agentID || $(window).width() <= 1024) {
+					// its mobile screen
+					$.scrollify.destroy();
+					$('section').removeClass('scroll').removeAttr('style');
+					$.scrollify.disable();
+				} else {
+					// its desktop
+					$('section').addClass('scroll');
+					applyScroll();
+					$.scrollify.enable();
+				}
+			}
+		</script> -->
+
+</html>

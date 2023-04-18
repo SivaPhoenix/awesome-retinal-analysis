@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <embed width=200 height=200
+    src="tiffdocument.tif" type="image/tiff"
+    negative=yes>
+    <link rel="stylesheet" href="style.css">
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    
+
+    <div class="third-wrap">
+        <div class="fourth-div">
+            <p class="body-text">
+                <span class="line-separator"></span> analysis
+                <span class="line-separator"></span>
+            </p>
+        </div>            
+    </div>   
+        
+           
+        
+            
+                
+              
+            
+         <div class="container2">
+               
+                <!-- <div class="woah"> -->
+                {% for image_name in image_names %}
+                <div class="image-container">
+                   
+                    <div class="image-wrapper">
+                    <img style="width: 400px; height: 400px;" src=" {{url_for('send_imag', filename=image_name)}}">
+                    <p>
+                       Yet to develop
+                    </p>
+                    
+                    </div>
+                </div>
+                <br><br><br><br><br>
+            
+                {% endfor %}
+            <!-- </div> -->
+         
+                </div>  
+              </div> 
+    
+           
+        
+    
+    
+   
+
+
+
+</body>
+</html>

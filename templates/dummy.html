@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    </head>
+
+        <body>
+            <div class="oh">
+    
+             
+
+    <div class="shaan">
+    {% if nice ==True %}
+     <p> Tested positive with Diabetic Retinopathy of</p>
+{% else %}
+     <p> You seem alright </p>
+{% endif %}
+</div>
+<div class="ohh">{{fucks}}%<br></div>
+<br>
+    <div class="siuu">
+        <a href="gallery"><button class="button accept-btn" onclick="addAnimation2()">View report</button></a>
+    </div>
+</div>
+</div>
+        </body>
+    </html>
