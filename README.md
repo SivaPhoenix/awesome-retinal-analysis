@@ -18,13 +18,13 @@ pip install -r requirements.txt
 
 In terminal 
 
-bash
+```bash
 cd awesome-retinal-analysis
+```
 
-
-python
+```python
 python backend.py
-
+```
 
 ## Contributing
 
